@@ -7,11 +7,11 @@ $local_username = 'postgres';
 $local_password = '@CTra^s5xc!zG';
 $local_port     = '5432';
 //supabase database configuration
-$supa_host      = 'aws-0-us-west-2.pooler.supabase.com';
+/*$supa_host      = 'aws-0-us-west-2.pooler.supabase.com';
 $supa_dbname    = 'postgres';
 $supa_username  = "postgres.iwlwnmnpiacjojuklyqh";
 $supa_password  = "@CTra^s5xc!zG";
-$supa_port      = "6543";
+$supa_port      = "6543";*/
 
 $local_data_connection ="
     host = $local_host
@@ -20,13 +20,13 @@ $local_data_connection ="
     password = $local_password
     port = $local_port
 ";
-$supa_data_connection ="
+/*$supa_data_connection ="
     host = $supa_host
     dbname = $supa_dbname
     user = $supa_username
     password = $supa_password
     port = $supa_port
-";
+";*/
     //connection
     //local connection
     $local_conn = pg_connect($local_data_connection);
@@ -37,7 +37,7 @@ $supa_data_connection ="
     }else{
         echo" Local Success connection !!!";
     }
-    //supa connection
+    /*//supa connection
     $supa_conn = pg_connect($supa_data_connection);
 
     if(!$supa_conn){
@@ -45,5 +45,5 @@ $supa_data_connection ="
         exit();
     }else{
         echo" supabase Success connection !!!";
-    }
+    }*/
 ?>
