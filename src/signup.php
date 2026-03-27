@@ -6,8 +6,6 @@ $l_name  = $_POST ['lname'];
 $e_mail  = $_POST ['email'];
 $m_phone = $_POST ['mphone'];
 $p_sswd  = $_POST ['passwd'];
-$enc_pass= md5 ($p_sswd);
-
 
 //querry to insert into 
 
