@@ -2,7 +2,6 @@
 // this is  line comment 
 /*
 this is block comment
-jean gay
 */
     echo "Hello world. We're here";
     $num1 =20;
