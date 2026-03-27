@@ -4,31 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>register user</title>
-        <link rel="icon" type="image/png " href="icons/home.png">
+        <link rel="icon" type="image/png" href="icons/home.png">
     </head>
-    <body bgcolor="2A27F5">
+    
+    <body bgcolor="#2A27F5">
+    
             <table border="1" align="center">
-            <tr></td><label for="fname">Firstname </label><tr></td>
-            <input type="text"><br>
-
-            <tr></td><label for="lname">Lastname </label><tr></td>
-            <input type="text"><br>
-
-            <tr></td><label for="email">Email </label><tr></td>
-            <input type="text"><br>
-
-            <tr></tr><label for="password">Password </label><tr></td>
-            <input type="password"><br><br>
-
-            <tr></tr><label for="password">Password again </label><tr></td>
-            <input type="password"><br><br>
-
-            <label for="number">Mobile phone </label><tr></td>
+            
+            <form name="frm-user" action="signup.php" method="post">
+            
+            <tr><td><label for="fname">Firstname </label></td></tr>
+            <tr><td><input type="text" name="fname" required></td></tr>
+            
+            <tr><td><label for="lname">Lastname </label></td></tr>
+            <tr><td><input type="text" name="lname" required></td></tr>
+            
+            <tr><td><label for="email">Email </label></td></tr>
+            <tr><td><input type="text" name="email" required></td></tr>
+            
+            <tr><td><label for="password">Password </label></td></tr>
+            <tr><td><input type="password" name="password" required></td></tr>
+            
+            <tr><td><label for="password">Password again </label></td></tr>
+            <tr><td><input type="password" name="password2" required></td></tr>
+            
+            <tr><td><label for="number">Mobile phone </label></td></tr>
+            <tr><td><input type="number" name="phone" required></td></tr>
+            
+            <tr><td align="center">
+            <button type="submit">Register</button>
+            </td></tr>
+            
+            </form>
             
             
-            <input type="number"><br><br>
-
-            <button>Register</button>
-            </table>
+            
     </body>
 </html>
