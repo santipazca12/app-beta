@@ -11,7 +11,7 @@ $local_port     = '5432';
 $supa_host      = 'aws-1-us-east-1.pooler.supabase.com';
 $supa_dbname    = 'postgres';
 $supa_username  = "postgres.usqcmlgwktafkcslajdk";
-$supa_password  = "@CTra^s5xc!zG";
+$supa_password  = "UNICESMAG69";
 $supa_port      = "6543";
 
 $local_data_connection ="
