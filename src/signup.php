@@ -29,7 +29,8 @@ if ($p_sswd !== $p_conf) {
 }
 
 // ── Feature4: Encriptar contraseña con bcrypt ────────────────────
-$enc_pass = password_hash($p_sswd, PASSWORD_BCRYPT);
+//$enc_pass = password_hash($p_sswd, PASSWORD_BCRYPT);
+$enc_pass = md5($p_asswd);//inportante
 
 $sql    = "INSERT INTO users (firstname, lastname, email, mobile_phone, password)
            VALUES ($1, $2, $3, $4, $5)";
